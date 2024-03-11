@@ -8,7 +8,7 @@ use yii\widgets\LinkPager;
 
 <hr>
 
-<ul class="pagination">
+<ul>
 
     <?php foreach($pessoas as $pessoa) :?>
 
