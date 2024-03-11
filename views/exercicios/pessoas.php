@@ -28,5 +28,9 @@ use yii\widgets\LinkPager;
 
 <?= LinkPager::widget([
     'pagination' => $pagination,
+    // $options => ['class' => 'pagination'],
+    'linkOptions' => ['class' => 'page-link btn btn-primary'],
     'options' => ['class' => 'pagination'],
+    'prevPageLabel' => '<span aria-hidden="true">&laquo;</span>', 
+    'nextPageLabel' => '<span aria-hidden="true">&raquo;</span>', 
 ]); 
