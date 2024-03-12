@@ -1,5 +1,10 @@
 {
     "name": "yiisoft/yii2-app-basic",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
     "description": "Yii 2 Basic Project Template",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "https://www.yiiframework.com/",

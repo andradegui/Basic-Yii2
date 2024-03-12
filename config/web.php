@@ -5,12 +5,15 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'Basic Yii2',
+    'version' => '2.5',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'timeZone' => 'America/Sao_Paulo',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -19,6 +22,10 @@ $config = [
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
+        ],
+        'myComponent' => [
+            'class' => 'app\classes\components\MyComponent',
+            'string' => 'Aprendendo Basic Yii2'
         ],
         'user' => [
             'identityClass' => 'app\models\User',
