@@ -2,9 +2,38 @@
 
 /** @var yii\web\View $this */
 
+use yii\helpers\Html;
+use yii\jui\DatePicker;
+// use yii\jui\DatePicker;
+use yii\helpers\HtmlPurifier;
+use app\classes\widgets\HelloWord;
+use app\classes\widgets\HelloWidget;
+
 $this->title = 'My Yii Application';
 ?>
+
 <div class="site-index">
+
+    <div>
+        <?= DatePicker::widget([
+            'name' => 'data_venda',
+            'language' => 'pt',
+            'dateFormat' => 'dd/MM/yyyy',
+        ])?>
+    </div>
+
+    <div>
+        <?= HelloWidget::widget([
+            'message' => 'Teste',
+            'submessage' => 'Teste2',
+        ]) ?>
+
+        <?php HelloWord::begin(['encode' => false]) ?>
+
+            <h2>Aprendendo Widget no Yii2</h2>
+            
+        <?php HelloWord::end() ?>
+    </div>
 
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4">Congratulations!</h1>
