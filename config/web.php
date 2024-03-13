@@ -58,6 +58,17 @@ $config = [
             ],
         ],
         */
+
+        // 'assetManager' => [
+        //     'bundles' => [
+        //         'yii\web\JqueryAsset' => [
+        //             'sourcePath' => null, // não publica o arquivo JQuery original
+        //             'js' => [
+        //                 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', // ou qualquer outra URL do jQuery
+        //             ],
+        //         ],
+        //     ],
+        // ],
     ],
     'params' => $params,
 ];
