@@ -50,15 +50,12 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
-
         // 'assetManager' => [
         //     'bundles' => [
         //         'yii\web\JqueryAsset' => [
